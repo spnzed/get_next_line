@@ -3,7 +3,7 @@
 	 
   <i>42cursus' project #4</i>
 </h2>
-May it be a file, stdin, or even later a network connection, you will always need a way to read content line by line. It is time to start working on this function, which will be essential for your future projects. In this repo you will find all the files regarding the implementations of the <b>get_next_line</b> functions, both its <b>mandatory</b> and <b>bonus</b> versions.
+May it be a file, stdin, or even later a network connection, you will always need a way to read content line by line. It is time to start working on this function, which will be essential for your future projects. In this repo you will find all the files regarding the implementations of the <b>get_next_line</b> functions.
   <h1 align=center>
 
 ![get_next_linee](https://github.com/spnzed/get_next_line/assets/95354392/dbf1d6c4-108f-462b-b890-f8d3240f2cc4)
@@ -17,12 +17,6 @@ Mandatory
 
 > <i>Calling the function `get_next_line` in a loop will then allow the user to read the text available on the file descriptor one line at a time until the end of it. It has to behave well both on external files and standard input. The function should return the line that has just been read. If there is nothing else to read or if an error has occurred it should return NULL. The <b>mandatory</b> part must deal with at least one file descriptor at a time, and can have more than one static variable.</i>
 
-<h3 align=center>
-Bonus
-</h3>
-
-> <i>The <b>bonus</b> part must behave like the mandatory part but adding up functionality to handle multiple file descriptors opened at once. The bonus function must also deal with only one static variable.</i>
-
 ---
 
 <h2>
@@ -35,13 +29,6 @@ The project
 - [`get_next_line`](get_next_line.c)	- the main function and its additionals
 - [`get_next_line_utils`](get_next_line_utils.c)	- additional functions from [`libft`](https://github.com/caroldaniel/42sp-cursus-libft)
 
-### Bonus implementation
-
-- [`header file`](get_next_line_bonus.h)
-- [`get_next_line_bonus`](get_next_line_bonus.c)	- the main function and its additionals
-- [`get_next_line_utils_bonus`](get_next_line_utils_bonus.c)	- additional functions from [`libft`](https://github.com/caroldaniel/42sp-cursus-libft)
-
-
 ---
 <h2>
 Usage
@@ -49,7 +36,7 @@ Usage
 
 ### Instructions
 
-When compiling `get_next_line` or its **bonus** version, be sure to include the following flags
+When compiling `get_next_line`, be sure to include the following flags
 
 ```sh
 $> gcc -Wall -Wextra -Werror -D BUFFER_SIZE=xxx <files>.c.
